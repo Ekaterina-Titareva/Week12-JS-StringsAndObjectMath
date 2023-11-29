@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Comments Service</title>
+	<link rel="stylesheet" href="./assets/style/normalize.css">
+	<link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+	<h1 class="title">Comments Service</h1>
+	<section class="wrapper">
+		<article class="container">
+			<p class="container__title">You can write down your comment here</p>
+			<div class="">
+				<p class="comment__name-title">Enter your name</p>
+				<input id="name" type="text" placeholder="Jacob" />
+				<p class="comment__avatar-title">Enter a link to your avatar</p>
+				<input id="link" class="comment__avatar" type="text" placeholder="myavatarlink.jpeg"></input>
+			</div>
+			<div>
+				<p class="comment__name-title">Write your comment</p>
+				<textarea name="comment" id="comment" cols="20" rows="5" placeholder="Hello everyone!"></textarea>
+			</div>
+			<div>
+				<button id="button" class="btn">Send</button>
+			</div>
+		</article>
+		<article class="container">
+			<p id="comments" class="container__title">Comments</p>
+			<div class="comment">
+				<img id="linkResult" class="image display-none" src="" alt="photo" />
+				<div class="comment-text">
+					<p id="nameResult" class="comment__name"></p>
+					<p id="commentResult"></p>
+				</div>
+			</div>
+		</article>
+	</section>
+	<script src="./assets/script/script.js"></script>
+</body>
+
+</html>
